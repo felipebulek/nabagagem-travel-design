@@ -70,6 +70,9 @@ export default {
 				'elegant': 'var(--shadow-elegant)',
 				'card-custom': 'var(--shadow-card)'
 			},
+			fontFamily: {
+				'lora': ['Lora', 'serif'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

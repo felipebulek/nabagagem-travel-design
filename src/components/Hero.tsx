@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
-import heroImage from "@/assets/hero-travel.jpg";
+import { ArrowDown, Plane, Luggage } from "lucide-react";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -18,45 +17,68 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-nabagagem-purple via-nabagagem-purple-light to-nabagagem-purple">
+      {/* Decorative Elements */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage}
-          alt="Destino de viagem inspirador"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+        {/* Travel Icons */}
+        <div className="absolute top-1/4 right-1/4 opacity-20">
+          <div className="relative">
+            <Luggage size={120} className="text-white" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center">
+                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-4 h-4 border border-nabagagem-purple rounded-full relative">
+                    <div className="absolute inset-1 border-t border-l border-nabagagem-purple rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="absolute top-1/3 right-1/6 opacity-30">
+          <Plane size={80} className="text-white transform rotate-45" />
+          <svg className="absolute -bottom-4 -left-8 w-32 h-16" viewBox="0 0 128 64">
+            <path
+              d="M 8 32 Q 32 16, 64 32 T 120 32"
+              stroke="white"
+              strokeWidth="2"
+              strokeDasharray="4,4"
+              fill="none"
+              opacity="0.5"
+            />
+          </svg>
+        </div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="mb-8">
           <img 
-            src="/lovable-uploads/b5538859-4022-41f0-a086-a8fe6df7c924.png" 
+            src="/lovable-uploads/0124c01f-ea8c-4ab2-9856-ab3f098eb5ff.png" 
             alt="Na Bagagem" 
-            className="h-24 sm:h-32 mx-auto mb-6 filter brightness-0 invert"
+            className="h-24 sm:h-32 mx-auto mb-6"
           />
         </div>
         
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight font-lora">
           Na Bagagem
         </h1>
         
-        <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-gray-200 font-light">
+        <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white/90 font-light font-lora">
           Caminhos pensados além do destino
         </p>
         
-        <p className="text-lg sm:text-xl mb-12 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-relaxed">
           Consultoria especializada em Travel Design para criar experiências únicas e personalizadas
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
-            variant="hero" 
+            variant="outline" 
             size="lg"
             onClick={scrollToContact}
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto bg-white text-nabagagem-purple border-white hover:bg-white/90"
           >
             Planejar Minha Viagem
           </Button>
@@ -64,7 +86,7 @@ const Hero = () => {
             variant="outline" 
             size="lg"
             onClick={scrollToAbout}
-            className="w-full sm:w-auto bg-white/10 border-white/30 text-white hover:bg-white/20"
+            className="w-full sm:w-auto bg-transparent border-white/50 text-white hover:bg-white/10"
           >
             Conheça Nossa História
           </Button>
