@@ -55,7 +55,7 @@ const Hero = () => {
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="mb-8">
           <img 
-            src="/lovable-uploads/0124c01f-ea8c-4ab2-9856-ab3f098eb5ff.png" 
+            src="/lovable-uploads/nabagagemLogoWhite.png" 
             alt="Na Bagagem" 
             className="h-24 sm:h-32 mx-auto mb-6"
           />
