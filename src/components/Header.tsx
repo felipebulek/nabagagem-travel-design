@@ -13,7 +13,7 @@ const Header = () => {
     setIsMenuOpen(false);
   };
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-card-custom">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 bg-white">
         <div className="flex items-center justify-between h-16 bg-white">
           {/* Logo */}
           <div className="flex items-center">
