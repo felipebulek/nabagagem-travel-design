@@ -36,7 +36,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <Phone size={18} />
-                  <span>(41) 988109365</span>
+                  <span>(41) 98810-9365</span>
                 </a>
                 <a 
                   href="mailto:tathiana@nabagagem.com"

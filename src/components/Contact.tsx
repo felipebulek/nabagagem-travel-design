@@ -59,7 +59,7 @@ Aguardo o contato!`;
     {
       icon: <Phone className="w-6 h-6" />,
       title: "WhatsApp",
-      content: "(41) 988109365",
+      content: "(41) 98810-9365",
       action: () => window.open('https://wa.me/5541988109365', '_blank')
     },
     {
