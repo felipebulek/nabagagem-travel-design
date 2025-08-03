@@ -30,13 +30,13 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Contato</h3>
               <div className="space-y-3">
                 <a 
-                  href="https://wa.me/5541997081809" 
+                  href="https://wa.me/5541988109365" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <Phone size={18} />
-                  <span>(41) 99708-1809</span>
+                  <span>(41) 988109365</span>
                 </a>
                 <a 
                   href="mailto:tathiana@nabagagem.com"

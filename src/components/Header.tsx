@@ -63,7 +63,7 @@ const Header = () => {
           {/* Contact Icons */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="https://wa.me/5541997081809" 
+              href="https://wa.me/5541988109365"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary hover:text-primary-hover transition-colors"
@@ -136,7 +136,7 @@ const Header = () => {
               {/* Mobile Contact Icons */}
               <div className="flex items-center justify-center space-x-6 pt-4 border-t border-border mt-4">
                 <a 
-                  href="https://wa.me/5541997081809" 
+                  href="https://wa.me/5541988109365" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary-hover transition-colors"

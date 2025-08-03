@@ -30,7 +30,7 @@ const Contact = () => {
 
 Aguardo o contato!`;
 
-    const whatsappUrl = `https://wa.me/5541997081809?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5541988109365?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 
     toast({
@@ -59,8 +59,8 @@ Aguardo o contato!`;
     {
       icon: <Phone className="w-6 h-6" />,
       title: "WhatsApp",
-      content: "(41) 99708-1809",
-      action: () => window.open('https://wa.me/5541997081809', '_blank')
+      content: "(41) 988109365",
+      action: () => window.open('https://wa.me/5541988109365', '_blank')
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -234,7 +234,7 @@ Aguardo o contato!`;
                 <Button 
                   variant="outline" 
                   className="bg-white/10 border-white/30 text-white hover:bg-white/20"
-                  onClick={() => window.open('https://wa.me/5541997081809', '_blank')}
+                  onClick={() => window.open('https://wa.me/5541988109365', '_blank')}
                 >
                   Falar no WhatsApp
                 </Button>
