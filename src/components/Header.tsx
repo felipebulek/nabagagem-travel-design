@@ -16,9 +16,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 bg-white">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img src="/lovable-uploads/b5538859-4022-41f0-a086-a8fe6df7c924.png" alt="Na Bagagem" className="h-12 w-auto" />
-            <img src="/lovable-uploads/0124c01f-ea8c-4ab2-9856-ab3f098eb5ff.png" alt="Travel Icon" className="h-8 w-auto opacity-80" />
+          <div className="flex items-center">
+            <img src="/lovable-uploads/0124c01f-ea8c-4ab2-9856-ab3f098eb5ff.png" alt="Na Bagagem" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
