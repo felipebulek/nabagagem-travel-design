@@ -45,7 +45,7 @@ const Services = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Travel Design
             </h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-lg">Travel Design é mais do que planejar: é cuidar de cada detalhe da sua experiência de viagem.</p>
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-lg">Travel Design é mais do que planejar: é cuidar de cada detalhe da sua experiência de viagem. Cada roteiro é feito sob medida, alinhado ao seu perfil e expectativas. Mais do que reservas, é uma curadoria de experiências autênticas, com a intenção de tornar o conhecimento por trás do planejamento acessível a todos. Além disso, buscamos adaptar cada proposta ao orçamento disponível, facilitando o lado financeiro sem abrir mão de conforto e originalidade. Assim, cada viagem se transforma em uma memória única e especial.</p>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
 
