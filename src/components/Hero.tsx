@@ -1,11 +1,34 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Plane, Luggage, Settings } from "lucide-react";
-import { useState } from "react";
-import HeroBackgroundSelector from "./HeroBackgroundSelector";
+import { ArrowDown, Plane, Luggage } from "lucide-react";
+import { useState, useEffect } from "react";
 import travelDesignHero from "@/assets/travel-design-hero.jpg";
+import heroOption1 from "@/assets/hero-option-1.jpg";
+import heroOption2 from "@/assets/hero-option-2.jpg";
+import heroOption3 from "@/assets/hero-option-3.jpg";
+import heroOption4 from "@/assets/hero-option-4.jpg";
+import heroOption5 from "@/assets/hero-option-5.jpg";
 const Hero = () => {
-  const [showBackgroundSelector, setShowBackgroundSelector] = useState(false);
-  const [currentBackground, setCurrentBackground] = useState(travelDesignHero);
+  const backgroundImages = [
+    travelDesignHero,
+    heroOption1,
+    heroOption2,
+    heroOption3,
+    heroOption4,
+    heroOption5
+  ];
+  
+  const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBackgroundIndex((prevIndex) => 
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000); // Muda a cada 5 segundos
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -14,6 +37,7 @@ const Hero = () => {
       });
     }
   };
+
   const scrollToAbout = () => {
     const element = document.getElementById('about');
     if (element) {
@@ -22,24 +46,11 @@ const Hero = () => {
       });
     }
   };
-  const handleBackgroundChange = (newBackground: string) => {
-    setCurrentBackground(newBackground);
-    setShowBackgroundSelector(false);
-  };
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{
-    backgroundImage: `url(${currentBackground})`
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat transition-all duration-1000" style={{
+    backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`
   }}>
-      {/* Background Selector Button */}
-      <Button variant="outline" size="sm" onClick={() => setShowBackgroundSelector(true)} className="absolute top-20 right-4 z-20 bg-black/20 border-white/30 text-white hover:bg-black/40">
-        <Settings size={16} className="mr-2" />
-        Alterar Fundo
-      </Button>
-
-      {/* Background Selector Modal */}
-      {showBackgroundSelector && <HeroBackgroundSelector onSelectBackground={handleBackgroundChange} currentBackground={currentBackground} />}
-      
       {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-black/40 z-5"></div>
+      <div className="absolute inset-0 bg-black/50 z-5"></div>
       {/* Decorative Elements */}
       <div className="absolute inset-0 z-0">
         {/* Travel Icons */}
@@ -89,10 +100,14 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="outline" size="lg" onClick={scrollToAbout} className="w-full sm:w-auto bg-transparent border-white/50 text-white hover:bg-white/10">
+          <Button variant="outline" size="lg" onClick={scrollToAbout} className="w-full sm:w-auto bg-transparent border-white/50 text-white hover:bg-white/10 shadow-lg" style={{
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
+          }}>
             Conheça Nossa História
           </Button>
-          <Button variant="outline" size="lg" onClick={scrollToContact} className="w-full sm:w-auto bg-white text-nabagagem-purple border-white hover:bg-white/90">
+          <Button variant="outline" size="lg" onClick={scrollToContact} className="w-full sm:w-auto bg-white text-nabagagem-purple border-white hover:bg-white/90 shadow-lg" style={{
+            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
+          }}>
             Inicie sua consultoria
           </Button>
         </div>
