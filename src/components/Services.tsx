@@ -98,14 +98,6 @@ const Services = () => {
             </Card>
           </div>
 
-          {/* Hero Image */}
-          <div className="mb-16">
-            <Card className="overflow-hidden shadow-elegant">
-              <CardContent className="p-0">
-                <img src={travelExperiences} alt="Experiências de viagem personalizadas" className="w-full h-64 sm:h-80 lg:h-96 object-cover" />
-              </CardContent>
-            </Card>
-          </div>
 
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
