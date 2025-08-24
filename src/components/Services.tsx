@@ -45,8 +45,7 @@ const Services = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Travel Design
             </h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-lg">Travel Design é mais do que planejar: é cuidar de cada detalhe da sua experiência de viagem.
-O que você pode esperar da NaBagagem: criação de viagens customizadas com planejamento de roteiros, escolha de hospedagens, passagens, atrações e experiências personalizadas, feitas sob medida para você.</p>
+            <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-lg">Travel Design é mais do que planejar: é cuidar de cada detalhe da sua experiência de viagem.</p>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
 
