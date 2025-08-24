@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { MapPin, Heart, Compass, Users, Plane, Star } from "lucide-react";
 import travelExperiences from "@/assets/travel-experiences.jpg";
 const Services = () => {
@@ -47,6 +48,55 @@ const Services = () => {
             <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-lg">Travel Design é mais do que planejar: é cuidar de cada detalhe da sua experiência de viagem.
 O que você pode esperar da NaBagagem: criação de viagens customizadas com planejamento de roteiros, escolha de hospedagens, passagens, atrações e experiências personalizadas, feitas sob medida para você.</p>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          </div>
+
+          {/* Comparison Table */}
+          <div className="mb-16">
+            <Card className="overflow-hidden shadow-elegant">
+              <CardContent className="p-0">
+                <Table>
+                  <TableHeader>
+                    <TableRow className="border-b-2">
+                      <TableHead className="w-1/3 text-center font-bold text-foreground"></TableHead>
+                      <TableHead className="w-1/3 text-center font-bold text-foreground bg-muted">Agência de Viagens ❌</TableHead>
+                      <TableHead className="w-1/3 text-center font-bold text-foreground bg-nabagagem-purple-light">Travel Design ✅</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell className="font-semibold text-foreground border-r">Roteiro pronto</TableCell>
+                      <TableCell className="text-center bg-muted border-r">✔️</TableCell>
+                      <TableCell className="text-center bg-nabagagem-purple-light">❌</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-semibold text-foreground border-r">100% personalizado</TableCell>
+                      <TableCell className="text-center bg-muted border-r">❌</TableCell>
+                      <TableCell className="text-center bg-nabagagem-purple-light">✔️</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-semibold text-foreground border-r">Foco em Passagens e Hotéis</TableCell>
+                      <TableCell className="text-center bg-muted border-r">✔️</TableCell>
+                      <TableCell className="text-center bg-nabagagem-purple-light">❌</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-semibold text-foreground border-r">Foco em Experiências únicas</TableCell>
+                      <TableCell className="text-center bg-muted border-r">❌</TableCell>
+                      <TableCell className="text-center bg-nabagagem-purple-light">✔️</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-semibold text-foreground border-r">Suporte na viagem</TableCell>
+                      <TableCell className="text-center bg-muted border-r">❌</TableCell>
+                      <TableCell className="text-center bg-nabagagem-purple-light">✔️</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell className="font-semibold text-foreground border-r">Atenção nos detalhes</TableCell>
+                      <TableCell className="text-center bg-muted border-r">❌</TableCell>
+                      <TableCell className="text-center bg-nabagagem-purple-light">✔️</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Hero Image */}
