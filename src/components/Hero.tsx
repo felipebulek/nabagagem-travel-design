@@ -72,11 +72,11 @@ const Hero = () => {
           Na Bagagem
         </h1>
         
-        <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white/90 font-light font-lora">
+        <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white font-light font-lora" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
           Caminhos pensados além do destino
         </p>
         
-        <p className="text-lg sm:text-xl mb-12 text-white/80 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl mb-12 text-white max-w-2xl mx-auto leading-relaxed" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)' }}>
           Consultoria especializada em Travel Design para criar experiências únicas e personalizadas
         </p>
         
