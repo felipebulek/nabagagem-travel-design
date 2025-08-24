@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Plane, Luggage } from "lucide-react";
-import maldivesHero from "@/assets/maldives-resort-hero.jpg";
+import travelDesignHero from "@/assets/travel-design-hero.jpg";
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -19,7 +19,7 @@ const Hero = () => {
     }
   };
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{
-    backgroundImage: `url(${maldivesHero})`
+    backgroundImage: `url(${travelDesignHero})`
   }}>
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/40 z-5"></div>
