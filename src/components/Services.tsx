@@ -58,8 +58,8 @@ O que você pode esperar da NaBagagem: criação de viagens customizadas com pla
                   <TableHeader>
                     <TableRow className="border-b-2">
                       <TableHead className="w-1/3 text-center font-bold text-foreground"></TableHead>
-                      <TableHead className="w-1/3 text-center font-bold text-foreground bg-muted">Agência de Viagens ❌</TableHead>
-                      <TableHead className="w-1/3 text-center font-bold text-foreground bg-nabagagem-purple-light">Travel Design ✅</TableHead>
+                      <TableHead className="w-1/3 text-center font-bold text-foreground bg-muted">Agência de Viagens</TableHead>
+                      <TableHead className="w-1/3 text-center font-bold text-foreground bg-nabagagem-purple-light">Travel Design</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
