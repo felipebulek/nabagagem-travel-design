@@ -74,7 +74,7 @@ const Hero = () => {
         
         <h1 style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }} className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora sm:text-6xl text-white">NaBagagem.com</h1>
+      }} className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora text-[#612c70] sm:text-6xl">NaBagagem.com</h1>
         
         <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white font-light font-lora" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
