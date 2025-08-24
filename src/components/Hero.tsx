@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Plane, Luggage } from "lucide-react";
 import { useState, useEffect } from "react";
-import travelDesignHero from "@/assets/travel-design-hero.jpg";
 import heroOption1 from "@/assets/hero-option-1.jpg";
 import heroOption2 from "@/assets/hero-option-2.jpg";
 import heroOption3 from "@/assets/hero-option-3.jpg";
@@ -9,12 +8,11 @@ import heroOption4 from "@/assets/hero-option-4.jpg";
 import heroOption5 from "@/assets/hero-option-5.jpg";
 const Hero = () => {
   const backgroundImages = [
-    travelDesignHero,
-    heroOption1,
-    heroOption2,
-    heroOption3,
-    heroOption4,
-    heroOption5
+    heroOption1, // Resort tropical
+    heroOption2, // Montanhas alpinas
+    heroOption3, // Cidade europeia
+    heroOption4, // Jardim zen
+    heroOption5  // Costa mediterrânea
   ];
   
   const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
@@ -54,13 +52,13 @@ const Hero = () => {
       {/* Decorative Elements */}
       <div className="absolute inset-0 z-0">
         {/* Travel Icons */}
-        <div className="absolute top-1/4 right-1/4 opacity-20">
+        <div className="absolute top-16 right-8 opacity-15">
           <div className="relative">
-            <Luggage size={120} className="text-white" />
+            <Luggage size={100} className="text-white" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center">
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                  <div className="w-4 h-4 border border-nabagagem-purple rounded-full relative">
+              <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">
+                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 border border-nabagagem-purple rounded-full relative">
                     <div className="absolute inset-1 border-t border-l border-nabagagem-purple rounded-full"></div>
                   </div>
                 </div>
@@ -69,10 +67,10 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute top-1/3 right-1/6 opacity-30">
-          <Plane size={80} className="text-white transform rotate-45" />
-          <svg className="absolute -bottom-4 -left-8 w-32 h-16" viewBox="0 0 128 64">
-            <path d="M 8 32 Q 32 16, 64 32 T 120 32" stroke="white" strokeWidth="2" strokeDasharray="4,4" fill="none" opacity="0.5" />
+        <div className="absolute bottom-20 left-8 opacity-20">
+          <Plane size={60} className="text-white transform rotate-12" />
+          <svg className="absolute -bottom-2 -right-6 w-24 h-12" viewBox="0 0 96 48">
+            <path d="M 8 24 Q 24 12, 48 24 T 88 24" stroke="white" strokeWidth="1.5" strokeDasharray="3,3" fill="none" opacity="0.4" />
           </svg>
         </div>
       </div>
