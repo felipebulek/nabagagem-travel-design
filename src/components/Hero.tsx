@@ -55,7 +55,9 @@ const Hero = () => {
           <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-24 sm:h-32 mx-auto mb-6" />
         </div>
         
-        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora text-[#612c70] sm:text-6xl">NaBagagem.com</h1>
+        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora text-[#612c70] sm:text-6xl" style={{
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
+      }}>NaBagagem.com</h1>
         
         <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white font-light font-lora" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
