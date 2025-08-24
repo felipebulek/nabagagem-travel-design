@@ -6,7 +6,6 @@ import travelDesignHero from "@/assets/travel-design-hero.jpg";
 const Hero = () => {
   const [showBackgroundSelector, setShowBackgroundSelector] = useState(false);
   const [currentBackground, setCurrentBackground] = useState(travelDesignHero);
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -27,28 +26,17 @@ const Hero = () => {
     setCurrentBackground(newBackground);
     setShowBackgroundSelector(false);
   };
-
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{
     backgroundImage: `url(${currentBackground})`
   }}>
       {/* Background Selector Button */}
-      <Button
-        variant="outline"
-        size="sm"
-        onClick={() => setShowBackgroundSelector(true)}
-        className="absolute top-20 right-4 z-20 bg-black/20 border-white/30 text-white hover:bg-black/40"
-      >
+      <Button variant="outline" size="sm" onClick={() => setShowBackgroundSelector(true)} className="absolute top-20 right-4 z-20 bg-black/20 border-white/30 text-white hover:bg-black/40">
         <Settings size={16} className="mr-2" />
         Alterar Fundo
       </Button>
 
       {/* Background Selector Modal */}
-      {showBackgroundSelector && (
-        <HeroBackgroundSelector
-          onSelectBackground={handleBackgroundChange}
-          currentBackground={currentBackground}
-        />
-      )}
+      {showBackgroundSelector && <HeroBackgroundSelector onSelectBackground={handleBackgroundChange} currentBackground={currentBackground} />}
       
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/40 z-5"></div>
@@ -84,9 +72,9 @@ const Hero = () => {
           <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-24 sm:h-32 mx-auto mb-6" />
         </div>
         
-        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora text-[#612c70] sm:text-6xl" style={{
+        <h1 style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }}>NaBagagem.com</h1>
+      }} className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora sm:text-6xl text-white">NaBagagem.com</h1>
         
         <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white font-light font-lora" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
