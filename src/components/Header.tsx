@@ -26,7 +26,7 @@ const Header = () => {
               Início
             </button>
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors">
-              Sobre
+              Quem Somos
             </button>
             <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors">
               Travel Design
@@ -67,7 +67,7 @@ const Header = () => {
                 Início
               </button>
               <button onClick={() => scrollToSection('about')} className="block px-3 py-2 text-base text-foreground hover:text-primary transition-colors w-full text-left">
-                Sobre
+                Quem Somos
               </button>
               <button onClick={() => scrollToSection('services')} className="block px-3 py-2 text-base text-foreground hover:text-primary transition-colors w-full text-left">
                 Travel Design
