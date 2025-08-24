@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Plane, Luggage } from "lucide-react";
+import maldivesHero from "@/assets/maldives-resort-hero.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -17,7 +18,13 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-nabagagem-purple via-nabagagem-purple-light to-nabagagem-purple">
+    <section 
+      id="home" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${maldivesHero})` }}
+    >
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40 z-5"></div>
       {/* Decorative Elements */}
       <div className="absolute inset-0 z-0">
         {/* Travel Icons */}
