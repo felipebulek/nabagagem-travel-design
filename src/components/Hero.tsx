@@ -68,7 +68,7 @@ const Hero = () => {
         <p className="text-lg sm:text-xl mb-12 text-white max-w-2xl mx-auto leading-relaxed" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
       }}>
-          Consultoria especializada em Travel Design para criar experiências únicas e personalizadas
+          Cada viagem é um projeto exclusivo, pensado para que você viva o destino com leveza e significado.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
