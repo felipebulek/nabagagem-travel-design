@@ -72,11 +72,11 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="outline" size="lg" onClick={scrollToContact} className="w-full sm:w-auto bg-white text-nabagagem-purple border-white hover:bg-white/90">
-            Planejar Minha Viagem
-          </Button>
           <Button variant="outline" size="lg" onClick={scrollToAbout} className="w-full sm:w-auto bg-transparent border-white/50 text-white hover:bg-white/10">
             Conheça Nossa História
+          </Button>
+          <Button variant="outline" size="lg" onClick={scrollToContact} className="w-full sm:w-auto bg-white text-nabagagem-purple border-white hover:bg-white/90">
+            Inicie sua consultoria
           </Button>
         </div>
       </div>
