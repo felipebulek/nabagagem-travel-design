@@ -14,7 +14,7 @@ const Footer = () => {
                 <img 
                   src="/lovable-uploads/6a9c18fa-d243-4f05-8194-c8b544f70419.png" 
                   alt="Na Bagagem" 
-                  className="h-16 w-auto filter brightness-0 invert"
+                  className="h-16 w-auto"
                 />
               </div>
               <p className="text-primary-foreground/80 leading-relaxed">
