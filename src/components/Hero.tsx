@@ -7,26 +7,24 @@ import heroOption3 from "@/assets/hero-option-3.jpg";
 import heroOption4 from "@/assets/hero-option-4.jpg";
 import heroOption5 from "@/assets/hero-option-5.jpg";
 const Hero = () => {
-  const backgroundImages = [
-    heroOption1, // Resort tropical
-    heroOption2, // Montanhas alpinas
-    heroOption3, // Cidade europeia
-    heroOption4, // Jardim zen
-    heroOption5  // Costa mediterrânea
+  const backgroundImages = [heroOption1,
+  // Resort tropical
+  heroOption2,
+  // Montanhas alpinas
+  heroOption3,
+  // Cidade europeia
+  heroOption4,
+  // Jardim zen
+  heroOption5 // Costa mediterrânea
   ];
-  
   const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentBackgroundIndex((prevIndex) => 
-        (prevIndex + 1) % backgroundImages.length
-      );
+      setCurrentBackgroundIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
     }, 5000); // Muda a cada 5 segundos
 
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -35,7 +33,6 @@ const Hero = () => {
       });
     }
   };
-
   const scrollToAbout = () => {
     const element = document.getElementById('about');
     if (element) {
@@ -83,17 +80,17 @@ const Hero = () => {
         
         <h1 style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }} className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight font-lora text-[#612c70]">NaBagagem.com</h1>
+      }} className="text-3xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight font-lora text-[#612c70] sm:text-6xl">NaBagagem.com</h1>
         
-        <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl mb-4 sm:mb-6 text-white font-light font-lora" style={{
+        <p style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }}>
+      }} className="text-lg lg:text-2xl xl:text-3xl mb-4 sm:mb-6 text-white font-light font-lora sm:text-2xl">
           Caminhos pensados além do destino
         </p>
         
-        <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-white max-w-2xl mx-auto leading-relaxed px-2" style={{
+        <p style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }}>
+      }} className="text-base lg:text-xl mb-6 sm:mb-8 text-white max-w-2xl mx-auto leading-relaxed px-2 sm:text-xl">
           Cada viagem é um projeto exclusivo, pensado para que você viva o destino com leveza e significado.
         </p>
         
