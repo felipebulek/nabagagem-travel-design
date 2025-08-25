@@ -49,8 +49,8 @@ const Hero = () => {
   }}>
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/50 z-5"></div>
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 z-0">
+      {/* Decorative Elements - Hidden on mobile */}
+      <div className="absolute inset-0 z-0 hidden md:block">
         {/* Travel Icons */}
         <div className="absolute top-16 right-8 opacity-15">
           <div className="relative">
@@ -76,28 +76,46 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <div className="mb-8">
-          <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-24 sm:h-32 mx-auto mb-6" />
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-8">
+        <div className="mb-6 sm:mb-8">
+          <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-16 sm:h-24 lg:h-32 mx-auto mb-4 sm:mb-6" />
         </div>
         
         <h1 style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }} className="text-4xl lg:text-6xl font-bold mb-6 leading-tight font-lora text-[#612c70] sm:text-6xl">NaBagagem.com</h1>
+      }} className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight font-lora text-[#612c70]">NaBagagem.com</h1>
         
-        <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white font-light font-lora" style={{
+        <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl mb-6 sm:mb-8 text-white font-light font-lora" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
       }}>
           Caminhos pensados além do destino
         </p>
         
-        <p className="text-lg sm:text-xl mb-12 text-white max-w-2xl mx-auto leading-relaxed" style={{
+        <p className="text-base sm:text-lg lg:text-xl mb-8 sm:mb-12 text-white max-w-2xl mx-auto leading-relaxed px-2" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
       }}>
           Cada viagem é um projeto exclusivo, pensado para que você viva o destino com leveza e significado.
         </p>
         
-        <div className="relative flex justify-center items-center w-full max-w-2xl mx-auto gap-4">
+        {/* Mobile layout - Stack buttons vertically */}
+        <div className="block sm:hidden space-y-4">
+          <Button variant="outline" size="lg" onClick={scrollToAbout} className="bg-[#612c70] border-[#612c70] text-white hover:bg-[#612c70]/90 shadow-lg w-full max-w-xs">
+            Conheça Nossa História
+          </Button>
+          
+          <div className="flex justify-center">
+            <button onClick={scrollToAbout} className="text-white/70 hover:text-white transition-colors animate-bounce">
+              <ArrowDown size={28} />
+            </button>
+          </div>
+          
+          <Button variant="outline" size="lg" onClick={scrollToContact} className="bg-white text-nabagagem-purple border-white hover:bg-white/90 shadow-lg w-full max-w-xs">
+            Inicie sua consultoria
+          </Button>
+        </div>
+
+        {/* Desktop layout - Horizontal */}
+        <div className="hidden sm:flex justify-center items-center w-full max-w-2xl mx-auto gap-4">
           <Button variant="outline" size="lg" onClick={scrollToAbout} className="bg-[#612c70] border-[#612c70] text-white hover:bg-[#612c70]/90 shadow-lg">
             Conheça Nossa História
           </Button>
