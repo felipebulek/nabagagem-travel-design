@@ -97,25 +97,21 @@ const Hero = () => {
           Cada viagem é um projeto exclusivo, pensado para que você viva o destino com leveza e significado.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="outline" size="lg" onClick={scrollToAbout} className="w-full sm:w-auto bg-[#612c70] border-[#612c70] text-white hover:bg-[#612c70]/90 shadow-lg" style={{
-            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-          }}>
+        <div className="relative flex justify-between items-center w-full max-w-5xl mx-auto">
+          <Button variant="outline" size="lg" onClick={scrollToAbout} className="bg-[#612c70] border-[#612c70] text-white hover:bg-[#612c70]/90 shadow-lg">
             Conheça Nossa História
           </Button>
-          <Button variant="outline" size="lg" onClick={scrollToContact} className="w-full sm:w-auto bg-white text-nabagagem-purple border-white hover:bg-white/90 shadow-lg" style={{
-            textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)'
-          }}>
+          
+          <div className="flex-shrink-0">
+            <button onClick={scrollToAbout} className="text-white/70 hover:text-white transition-colors animate-bounce">
+              <ArrowDown size={32} />
+            </button>
+          </div>
+          
+          <Button variant="outline" size="lg" onClick={scrollToContact} className="bg-white text-nabagagem-purple border-white hover:bg-white/90 shadow-lg">
             Inicie sua consultoria
           </Button>
         </div>
-      </div>
-
-      {/* Scroll Indicator - Centralizado entre os botões */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <button onClick={scrollToAbout} className="text-white/70 hover:text-white transition-colors animate-bounce">
-          <ArrowDown size={32} />
-        </button>
       </div>
     </section>;
 };
