@@ -6,7 +6,6 @@ import heroOption2 from "@/assets/hero-option-2.jpg";
 import heroOption3 from "@/assets/hero-option-3.jpg";
 import heroOption4 from "@/assets/hero-option-4.jpg";
 import heroOption5 from "@/assets/hero-option-5.jpg";
-import LogoWithBackgroundRemoval from "./LogoWithBackgroundRemoval";
 const Hero = () => {
   const backgroundImages = [heroOption1,
   // Resort tropical
@@ -76,7 +75,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-20 sm:pt-24 pb-8">
         <div className="mb-0.5 sm:mb-1 lg:mb-1.5">
-          <LogoWithBackgroundRemoval className="h-24 sm:h-32 lg:h-48 mx-auto" alt="Na Bagagem" />
+          <img src="/lovable-uploads/69a30256-49f8-4f19-9218-abd50864f622.png" alt="Na Bagagem" className="h-24 sm:h-32 lg:h-48 mx-auto" />
         </div>
         
         <h1 style={{
