@@ -44,7 +44,7 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat transition-all duration-1000" style={{
+  return <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat transition-all duration-1000" style={{
     backgroundImage: `url(${backgroundImages[currentBackgroundIndex]})`
   }}>
       {/* Overlay for text readability */}
@@ -77,21 +77,21 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-20 sm:pt-24 pb-8">
-        <div className="mb-12 sm:mb-16 lg:mb-20">
+        <div className="mb-6 sm:mb-8 lg:mb-10">
           <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-16 sm:h-24 lg:h-32 mx-auto" />
         </div>
         
         <h1 style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
-      }} className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight font-lora text-[#612c70]">NaBagagem.com</h1>
+      }} className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight font-lora text-[#612c70]">NaBagagem.com</h1>
         
-        <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl mb-6 sm:mb-8 text-white font-light font-lora" style={{
+        <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl mb-4 sm:mb-6 text-white font-light font-lora" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
       }}>
           Caminhos pensados além do destino
         </p>
         
-        <p className="text-base sm:text-lg lg:text-xl mb-8 sm:mb-12 text-white max-w-2xl mx-auto leading-relaxed px-2" style={{
+        <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-white max-w-2xl mx-auto leading-relaxed px-2" style={{
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
       }}>
           Cada viagem é um projeto exclusivo, pensado para que você viva o destino com leveza e significado.
