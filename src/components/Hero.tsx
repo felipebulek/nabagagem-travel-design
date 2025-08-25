@@ -76,9 +76,9 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-8">
-        <div className="mb-6 sm:mb-8">
-          <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-16 sm:h-24 lg:h-32 mx-auto mb-4 sm:mb-6" />
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto pt-20 sm:pt-24 pb-8">
+        <div className="mb-12 sm:mb-16 lg:mb-20">
+          <img src="/lovable-uploads/nabagagemLogoWhite.png" alt="Na Bagagem" className="h-16 sm:h-24 lg:h-32 mx-auto" />
         </div>
         
         <h1 style={{
