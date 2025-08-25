@@ -97,7 +97,7 @@ const Hero = () => {
           Cada viagem é um projeto exclusivo, pensado para que você viva o destino com leveza e significado.
         </p>
         
-        <div className="relative flex justify-center items-center w-full max-w-3xl mx-auto gap-16">
+        <div className="relative flex justify-center items-center w-full max-w-2xl mx-auto gap-8">
           <Button variant="outline" size="lg" onClick={scrollToAbout} className="bg-[#612c70] border-[#612c70] text-white hover:bg-[#612c70]/90 shadow-lg">
             Conheça Nossa História
           </Button>
