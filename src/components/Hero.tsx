@@ -98,7 +98,7 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="outline" size="lg" onClick={scrollToAbout} className="w-full sm:w-auto bg-transparent border-white/50 text-white hover:bg-white/10 shadow-lg" style={{
+          <Button variant="outline" size="lg" onClick={scrollToAbout} className="w-full sm:w-auto bg-[#612c70] border-[#612c70] text-white hover:bg-[#612c70]/90 shadow-lg" style={{
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
           }}>
             Conheça Nossa História
@@ -111,7 +111,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator - Centralizado entre os botões */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <button onClick={scrollToAbout} className="text-white/70 hover:text-white transition-colors animate-bounce">
           <ArrowDown size={32} />
